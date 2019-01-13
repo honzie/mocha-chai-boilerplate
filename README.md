@@ -25,10 +25,11 @@ Note that both `test-utils.js` and `test-utils.async.js` will run the code in `t
 
 ### Caveats
 
-* Tests are in a folder named `/test` at the root of your project
-* Code are in a folder named `/src` at the root of your project
-* All test files begin with `test-`
-* All test files and source files end with `.js`
+* Tests are in a folder named `/test` at the root of your project.
+* Code are in a folder named `/src` at the root of your project.
+* All test files begin with `test-`.
+* All test files and source files end with `.js`.
+* Code cannot be checked out to a path with `/test` in it. For example, if `test-workspace` is where your project lives, the test template won't work right.
 
 ## Adding to a project
 
@@ -104,3 +105,12 @@ Add this to your `package.json`, under `scripts`:
 ```
   "lint": "./node_modules/.bin/eslint resources ./lib"
 ```
+
+## Testing
+
+To ensure this repository works:
+
+* `npm install`
+* `npm test`
+
+Should run tests and lint, with no errors.
