@@ -3,9 +3,9 @@ Simple test boilerplate code. This repository can help bootstrap testing in a pr
 
 The benefit of this boilerplate is that the test files automatically import their corresponding source files. This makes unit testing easy.
 
-## Using the `template.js`
+## Using the `template.txt`
 
-Inside your `/test` folder, create test files that match your `/src` structure. For example, your folder structure might look like the following, with each `test-*.js` file being a copy of `template.js`.
+Inside your `/test` folder, create test files that match your `/src` structure. For example, your folder structure might look like the following, with each `test-*.js` file being a copy of `template.txt`.
 
 ```
 /src
@@ -89,12 +89,13 @@ I like using ES Lint with AirBnB's style guide. It's very very good but not perf
 Inside your project, run the following:
 
 ```
-> npm install eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react --save-dev
+> npx install-peerdeps --dev eslint-config-airbnb-base
 ```
 
 ### Configure ES Lint
 
 * Copy the `.eslintrc` file from this repository to your repository
+* Add any custom rules here under the `rules` property
 
 ### Set up `npm run lint` as a command
 
