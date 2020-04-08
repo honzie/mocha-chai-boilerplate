@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/**",
-    "test": "nyc --check-coverage --lines 75  --functions 75 --branches 50 --reporter=html --reporter=text mocha --exit && npm run lint"
+    "test": "./node_modules/.bin/nyc --check-coverage --lines 75  --functions 75 --branches 50 --reporter=html --reporter=text mocha --exit && npm run lint"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,9 @@
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-plugin-import": "^2.20.1",
-    "mocha": "^5.2.0",
     "nyc": "^15.0.0"
+  },
+  "dependencies": {
+    "mocha": "^7.1.1"
   }
 }
