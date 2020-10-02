@@ -18,9 +18,9 @@
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-plugin-import": "^2.20.1",
-    "nyc": "^15.0.0"
+    "nyc": "^15.1.0"
   },
   "dependencies": {
-    "mocha": "^7.1.1"
+    "mocha": "^8.1.3"
   }
 }
